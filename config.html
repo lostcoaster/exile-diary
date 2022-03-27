@@ -41,7 +41,7 @@
       const fs = require('fs');
       const logger = require('./modules/Log').getLogger(__filename);
       const Utils = require('./modules/Utils');
-      const configKeys = ["accountName", "poesessid", "clientTxt", "screenshotDir", "overlayEnabled", "minimizeToTray", "autoSwitch", "getLowConfidence"];
+      const configKeys = ["accountName", "poesessid", "clientTxt", "screenshotDir", "overlayEnabled", "minimizeToTray", "autoSwitch", "getLowConfidence", "elderSlayerMapPrice", "elderGuardianMapPrice"];
       
       var settings = {};
       var disabledTabsArray = [ 1 ];
@@ -856,6 +856,19 @@
               <input class='configInput' name='screenshotDir' id='screenshotDir' readonly type='text' maxlength='50' size='80' />
               <input type="checkbox" style='margin-left:20px;' id='screenshotDirDisable'/> Disable
             </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <hr>
+            </td>
+          </tr>
+          <tr>
+            <td><div class='configLabel ui-text'>Elder Slayer Map price</div></td>
+            <td><input class='configInput' name='elderSlayerMapPrice' id='elderSlayerMapPrice' type='text' maxlength='50' size='80' /></td>
+          </tr>
+          <tr>
+            <td><div class='configLabel ui-text'>Elder Guardian Map price</div></td>
+            <td><input class='configInput' name='elderGuardianMapPrice' id='elderGuardianMapPrice' type='text' maxlength='50' size='80' /></td>
           </tr>
           <tr>
             <td colspan="2">

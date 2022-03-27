@@ -327,6 +327,19 @@
       var tier = ItemData.getMapTier(item.parsedItem);
       var series = getSeries(item.parsedItem.icon);
 
+      // temporary override elder/elderslayer maps because they don't have a source of price in ninja
+      if(settings.elderGuardianMapPrice && item.parsedItem && item.parsedItem.implicitMods){
+        // elder : 10c for now
+        if(item.parsedItem.implicitMods.some(d=>d.startsWith("Map is occupied by"))){
+          return Number(settings.elderGuardianMapPrice);
+        }
+        // elderslayer : 25c for now
+        if(settings.elderSlayerMapPrice && item.parsedItem.implicitMods.some(d=>d.indexOf('Citadel'))){
+          return Number(settings.elderSlayerMapPrice);
+        }
+      }
+
+
       if(item.rarity === "Magic" && item.identified) {
         // strip affixes from magic item name
         name = Utils.getBaseFromMagicMap(name);
