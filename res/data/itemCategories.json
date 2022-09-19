@@ -2072,7 +2072,19 @@
     "Tainted Chromatic Orb": ["Currency", "Tainted"],
     "Tainted Jeweller's Orb": ["Currency", "Tainted"],
     "Tainted Armourer's Scrap": ["Currency", "Tainted"],
-    "Tainted Blacksmith's Whetstone": ["Currency", "Tainted"]
+    "Tainted Blacksmith's Whetstone": ["Currency", "Tainted"],
+
+    "Eldritch Chaos Orb": ["Currency", "Eldritch"],
+    "Exceptional Eldritch Ichor": ["Currency", "Eldritch"],
+    "Eldritch Orb of Annulment": ["Currency", "Eldritch"],
+    "Exceptional Eldritch Ember": ["Currency", "Eldritch"],
+    "Eldritch Exalted Orb": ["Currency", "Eldritch"],
+    "Grand Eldritch Ichor": ["Currency", "Eldritch"],
+    "Grand Eldritch Ember": ["Currency", "Eldritch"],
+    "Greater Eldritch Ember": ["Currency", "Eldritch"],
+    "Greater Eldritch Ichor": ["Currency", "Eldritch"],
+    "Lesser Eldritch Ember": ["Currency", "Eldritch"],
+    "Lesser Eldritch Ichor": ["Currency", "Eldritch"]
   },
  
   "heistQuestItems" : [
