@@ -16,7 +16,7 @@ const rateTypes = {
   "Resonator" : cleanNameValuePairs,
   "Essence" : cleanNameValuePairs,
   "DivinationCard" : cleanNameValuePairs,
-  "Prophecy" : cleanNameValuePairs,
+  // "Prophecy" : cleanNameValuePairs, // rip
   "SkillGem" : cleanGems,
   "BaseType" : cleanBaseTypes,
   "HelmetEnchant" : cleanEnchants,
@@ -27,7 +27,7 @@ const rateTypes = {
   "UniqueWeapon" : cleanUniqueItems,
   "UniqueArmour" : cleanUniqueItems,
   "UniqueAccessory" : cleanUniqueItems,
-  "Watchstone" : cleanWatchstones,
+  // "Watchstone" : cleanWatchstones,
   "Vial" : cleanNameValuePairs,
   "DeliriumOrb" : cleanNameValuePairs,
   "Invitation" : cleanNameValuePairs,
