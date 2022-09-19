@@ -44,39 +44,15 @@ function getCategory(item, subcategory = false) {
       return otherBaseTypes[t];
     }
   }
-  
-  switch(item.frameType) {
-    case 4:
-      var n = t.replace(/(Superior|Anomalous|Divergent|Phantasmal) /g, "");
-      if(gemBaseTypes[n]) {
-        return gemBaseTypes[n];
-      } else {
-        logger.info(`No base type found for gem [${t}]`);
-        return "";
-      }
-    case 5:  
-      if(t.startsWith("Captured Soul")) {
-        return "Pantheon Soul";
-      } else if(t.endsWith("Seed") || t.endsWith("Grain") || t.endsWith("Bulb") || t.endsWith("fruit")) {
-        return "Harvest Seed";
-      }
-      return "Labyrinth Items";
-    case 6:
-      return "Divination Card";
-    case 7:
-      return "Quest Items";
-    case 8:
-      return "Prophecy";
+
+  if(t.endsWith("Crystallised Lifeforce")) {
+    return (subcategory? ["Stackable Currency", "Lifeforce"] : "Stackable Currency");
   }
   
   if(t.endsWith("Scarab")) {
     return (subcategory ? ["Map Fragments", "Scarab"] : "Map Fragments");
   }
-  
-  if(t.includes("Watchstone")) {
-    return "Atlas Region Upgrade Item";
-  }
-  
+
   // Maligaro's Map quest item has frameType 7, already detected above as a quest item
   if(t.includes(" Map")) {
     return "Maps";
@@ -97,6 +73,26 @@ function getCategory(item, subcategory = false) {
   // 3.9 metamorph inventory organs
   for(var i = 0; i < metamorphSamples.length; i++) {
     if(item.icon.includes(metamorphSamples[i])) return "Metamorph Sample";
+  }
+
+  switch(item.frameType) {
+    case 4:
+      var n = t.replace(/(Superior|Anomalous|Divergent|Phantasmal) /g, "");
+      if(gemBaseTypes[n]) {
+        return gemBaseTypes[n];
+      } else {
+        logger.info(`No base type found for gem [${t}]`);
+        return "";
+      }
+    case 5:  
+      if(t.startsWith("Captured Soul")) {
+        return "Pantheon Soul";
+      }
+      return "Labyrinth Items";
+    case 6:
+      return "Divination Card";
+    case 7:
+      return "Quest Items";
   }
   
   // equipment - search by hardcoded basetype

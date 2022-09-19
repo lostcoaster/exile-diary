@@ -376,7 +376,7 @@ class Utils {
           "pseudo": true,
           "w": 1,
           "h": 1,
-          "icon": "https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyModValues.png?scale=1&scaleIndex=0",
+          "icon": "https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyRerollSocketLinks.png?scale=1&scaleIndex=0",
           "id": "6L",
           "name": "6-link Items",
           "typeLine": "6-link Items",

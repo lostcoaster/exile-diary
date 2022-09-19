@@ -2061,8 +2061,18 @@
     "Lesser Sun Artifact" : "Stackable Currency",
     "Common Sun Artifact" : "Stackable Currency",
     "Greater Sun Artifact" : "Stackable Currency",
-    "Grand Sun Artifact" : "Stackable Currency"
-    
+    "Grand Sun Artifact" : "Stackable Currency",
+
+    "Tainted Divine Teardrop": ["Currency", "Tainted"],
+    "Tainted Exalted Orb": ["Currency", "Tainted"],
+    "Tainted Chaos Orb": ["Currency", "Tainted"],
+    "Tainted Mythic Orb": ["Currency", "Tainted"],
+    "Tainted Blessing": ["Currency", "Tainted"],
+    "Tainted Orb of Fusing": ["Currency", "Tainted"],
+    "Tainted Chromatic Orb": ["Currency", "Tainted"],
+    "Tainted Jeweller's Orb": ["Currency", "Tainted"],
+    "Tainted Armourer's Scrap": ["Currency", "Tainted"],
+    "Tainted Blacksmith's Whetstone": ["Currency", "Tainted"]
   },
  
   "heistQuestItems" : [
