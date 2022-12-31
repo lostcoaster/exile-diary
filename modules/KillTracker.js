@@ -12,10 +12,10 @@ const incubatorGearSlots = [
   "Ring",
   "Ring2",
   "Amulet",
-  "Boots",
   "Weapon",
   "Offhand",
-  "Trinket"
+  "Trinket",
+  "Belt"
   // weapon2 and offhand2 not included - alternate weapon set does not accumulate monster kills
   // seems inconsistent with gem leveling??
 ];
